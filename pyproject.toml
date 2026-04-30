@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "langchain-arcgate"
@@ -24,3 +24,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://bendexgeometry.com"
 Repository = "https://github.com/9hannahnine-jpg/langchain-arcgate"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["langchain_arcgate*"]
