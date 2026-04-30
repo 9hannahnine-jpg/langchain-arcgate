@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "langchain-arcgate"
+version = "0.1.0"
+description = "Arc Gate prompt injection detection for LangChain"
+readme = "README.md"
+license = {text = "Commercial"}
+authors = [{name = "Hannah Nine", email = "9hannahnine@gmail.com"}]
+keywords = ["langchain", "llm", "security", "prompt-injection", "arc-gate"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "langchain-core>=0.1.0",
+    "httpx>=0.24.0",
+]
+
+[project.urls]
+Homepage = "https://bendexgeometry.com"
+Repository = "https://github.com/9hannahnine-jpg/langchain-arcgate"
