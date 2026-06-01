@@ -16,7 +16,8 @@ pip install langchain-arcgate
 from langchain_arcgate import ArcGateCallback
 from langchain_openai import ChatOpenAI
 
-llm = ChatOpenAI(callbacks=[ArcGateCallback(api_key="demo")])
+# Get your free personal key at web-production-6e47f.up.railway.app/signup
+llm = ChatOpenAI(callbacks=[ArcGateCallback(api_key="your-demo-key")])
 
 # Normal prompts pass through
 response = llm.invoke("What are your business hours?")
@@ -57,11 +58,13 @@ Evaluated on 40 OOD prompts — indirect, roleplay, hypothetical, technical fram
 
 Zero false positives. Block latency: 329ms average.
 
-## Get a production key
+## Get your free API key
 
-Demo key is rate limited. For production use:
+Get a personal key with 500 free requests and your own monitoring dashboard:
 
-[bendexgeometry.com](https://bendexgeometry.com) — $29/month, unlimited requests, full monitoring dashboard.
+[bendexgeometry.com](https://web-production-6e47f.up.railway.app/signup) — free, no credit card required.
+
+For unlimited requests and full platform access: $29/month at [bendexgeometry.com](https://bendexgeometry.com).
 
 ## About
 
